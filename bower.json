@@ -1,0 +1,27 @@
+{
+  "name": "onesourcegetall",
+  "description": "Website for an online candy store",
+  "main": "index.html",
+  "authors": [
+    "Divya Dodwani"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "candy",
+    "candies",
+    "chocolate",  
+    "onesourcegetall"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5"
+  },
+  "private": true
+}

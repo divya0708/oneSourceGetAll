@@ -41,22 +41,25 @@
         </div> 
             </div>
             <div class="container">
-            <div class="row">
+           
+        <div class="row row-content" ng-controller="candyNamesController as candyNamesCtrl">
+            
+             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-1">
-                <label for="search">Search:</label>
-                    <input id="search" ng-model="candyNamesCtrl.searchResult" type="text">
+                    <label for="search" style = "margin:-30px 0px 30px"><h4>Search:</h4></label>
+                    <input id="search" ng-model="candyNamesCtrl.searchResult">
                 </div>
                 </div>    
-        <div class="row row-content" ng-controller="candyNamesController as candyNamesCtrl">
+            
         <div class="col-xs-12">
             <ul class="media-list">
-            <li class="media" ng-repeat="caramel in candyNamesCtrl.caramels">
+            <li class="media" ng-repeat="caramel in candyNamesCtrl.caramels | filter:candyNamesCtrl.searchResult">
                 <div class="media-left media-middle"><a href="#">
                     <img class="media-object img-thumbnail" ng-src={{caramel.image}} alt="Caramel">
                     </a>
                 </div>
                 <div class="media-body">
-                <h3 class="media-heading | filter:candyNamesCtrl.searchResult">{{caramel.name}}
+                <h3 class="media-heading">{{caramel.name}}
                     <span class="badge">{{caramel.price | currency}}</span>
                     <span> {{caramel.quantity}}</span>
                     <span class="label label-success label-xs">{{caramel.availability}}</span>

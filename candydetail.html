@@ -10,14 +10,14 @@
     
     <title>oneSource getAll Store</title>     
         <!-- Bootstrap -->
-<!-- build:css styles/main.css -->
+
         
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="styles/mystyles.css" rel="stylesheet">
     <link href="styles/bootstrap-social/bootstrap-social.css" rel="stylesheet">    
-        <!-- endbuild -->
+        
         </head>
     
     <body>
@@ -72,11 +72,12 @@
         </div>
         </div>
         </div>
+        
         <script src="../bower_components/angular/angular.min.js"></script>
         <script>
-        var app = angular.module('oneSourceGetAllApp',[]);
-        
-            app.controller('candyDetailController', function() {
+            
+        var app = angular.module('oneSourceGetAllApp',[]);    
+        app.controller('candyDetailController', function() {
              var candy=
           {
           name:'Caramels',
@@ -85,7 +86,7 @@
           description:'Caramels are made by cooking sugar and water together.',
           comment:''
               
-          }
+          };
         this.candy = candy;     
         });
         
@@ -152,5 +153,7 @@
                 
                 this.caramels = caramels;
             });
+        
         </script>
     </body>
+</html>
