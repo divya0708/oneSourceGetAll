@@ -22,10 +22,11 @@
 
 <body>
     <div class="container">
-    <div class="row row-content" ng-controller="candyListController as candyListCtrl">
+    <div class="row row-content" ng-controller="CandyListController">
         <div class="col-xs-12">
+            <button ng-click="toggleDetails()" class="btn btn-xs btn-primary pull-right" type="button"> {{showDetails ? 'Hide Details':'Show Details'}}</button>
             <ul class="media-list">
-            <li class="media" ng-repeat="candy in candyListCtrl.candies">
+            <li class="media" ng-repeat="candy in candies">
             <div class="media-left media-middle"><a href="#">
                 <img class="media-object img-thumbnail" ng-src={{candy.image}} alt="Caramels">
                 </a></div>

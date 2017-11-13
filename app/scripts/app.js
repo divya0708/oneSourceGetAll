@@ -2,8 +2,8 @@
 
 angular.module('oneSourceGetAllApp',[])
     
-    .controller('candyListController', function() {
-        var candies=[
+    .controller('CandyListController', ['$scope', function($scope) {
+        $scope.candies=[
           {
           name:'Caramels',
           image:'images/Caramels.png',
@@ -61,7 +61,7 @@ angular.module('oneSourceGetAllApp',[])
           comment:''          
           }];
         
-        this.candies = candies;
-    });
+        
+    }]);
 
  
